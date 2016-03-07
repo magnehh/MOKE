@@ -2,8 +2,8 @@ function [H, V] = Hysteresis( filename )
 %HYSTERESIS Get hysteresis data from .pro file.
 %   [H, V] = HYSTERESIS( FILENAME ) returns two arrays: H = [Hc, Ho, H1, H2
 %   ](Hc = coercivity, Ho = offset, H1 and H2 = mid-point edges) and
-%   V = [V_top, V_bot] (V_top = top point after smoothing at 90%, V_bot =
-%   bot point after smoothing at 10%).
+%   V = [V_top, V_bot] (V_top = top point after smoothing, V_bot = bot
+%   point after smoothing).
 
 % get data from file
 [data, header] = ReadPro(filename);
