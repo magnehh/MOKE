@@ -1,7 +1,7 @@
 
 clear;
 
-N = 35;
+N = 34;
 step_length = 5;
 
 Hc = zeros(1,N);
@@ -12,7 +12,7 @@ theta = zeros(1,N);
 % get data from files
 for i = 1:N
     theta(i) = (i-1)*step_length;
-    filename = strcat(int2str(theta(i)), 'deg.pro');
+    filename = strcat('../../16_03_11/', int2str(theta(i)), 'deg.pro');
     [H, V] = Hysteresis(filename);
     Hc(i) = H(1);
     Ho(i) = H(2);
